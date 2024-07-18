@@ -24,7 +24,7 @@ namespace CarAuctionBE
                 });
             });
             services.AddControllers();
-            services.AddScoped<IFeeCalculator, FeeCalculator>();
+            services.AddScoped<IFeesCalculator, FeesCalculator>();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

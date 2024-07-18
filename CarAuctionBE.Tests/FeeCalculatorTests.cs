@@ -3,13 +3,13 @@ using CarAuctionBE.Services;
 using CarAuctionBE.Models;
 
 namespace CarAuctionBE.CarAuctionBE.Tests;
-public class FeeCalculatorTests
+public class FeesCalculatorTests
 {
-    private readonly FeeCalculator _feeCalculator;
+    private readonly FeesCalculator _feesCalculator;
 
-    public FeeCalculatorTests()
+    public FeesCalculatorTests()
     {
-        _feeCalculator = new FeeCalculator();
+        _feesCalculator = new FeesCalculator();
     }
 
     [Fact]
@@ -17,7 +17,7 @@ public class FeeCalculatorTests
     {
         var vehicle = new CommonVehicle { BasePrice = 398m };
 
-        var result = _feeCalculator.CalculateFees(vehicle);
+        var result = _feesCalculator.CalculateFees(vehicle);
 
         Assert.Equal(39.80m, result.BasicBuyerFee);
         Assert.Equal(7.96m, result.SellerSpecialFee);
@@ -31,7 +31,7 @@ public class FeeCalculatorTests
     {
         var vehicle = new CommonVehicle { BasePrice = 501m };
 
-        var result = _feeCalculator.CalculateFees(vehicle);
+        var result = _feesCalculator.CalculateFees(vehicle);
 
         Assert.Equal(50m, result.BasicBuyerFee);
         Assert.Equal(10.02m, result.SellerSpecialFee);
@@ -45,7 +45,7 @@ public class FeeCalculatorTests
     {
         var vehicle = new CommonVehicle { BasePrice = 57m };
 
-        var result = _feeCalculator.CalculateFees(vehicle);
+        var result = _feesCalculator.CalculateFees(vehicle);
 
         Assert.Equal(10m, result.BasicBuyerFee);
         Assert.Equal(1.14m, result.SellerSpecialFee);
@@ -60,7 +60,7 @@ public class FeeCalculatorTests
     {
         var vehicle = new LuxuryVehicle { BasePrice = 1800m };
 
-        var result = _feeCalculator.CalculateFees(vehicle);
+        var result = _feesCalculator.CalculateFees(vehicle);
 
         Assert.Equal(180m, result.BasicBuyerFee);
         Assert.Equal(72m, result.SellerSpecialFee);
@@ -74,7 +74,7 @@ public class FeeCalculatorTests
     {
         var vehicle = new LuxuryVehicle { BasePrice = 1000000m };
 
-        var result = _feeCalculator.CalculateFees(vehicle);
+        var result = _feesCalculator.CalculateFees(vehicle);
 
         Assert.Equal(200m, result.BasicBuyerFee);
         Assert.Equal(40000m, result.SellerSpecialFee);

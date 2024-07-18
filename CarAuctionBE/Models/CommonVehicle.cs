@@ -6,7 +6,7 @@ public class CommonVehicle : Vehicle
 {
   public override VehicleFeesCalculationResult CalculatePriceWithFees()
   {
-    var feeCalculator = new Services.FeeCalculator();
-    return feeCalculator.CalculateFees(this);
+    var feesCalculator = new Services.FeesCalculator();
+    return feesCalculator.CalculateFees(this);
   }
 }

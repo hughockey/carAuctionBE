@@ -29,35 +29,6 @@ public class AuctionControllerTests
     Assert.NotNull(value);
   }
 
-  // [Fact]
-  // public void GetTotalPrice_InvalidVehicleType_ReturnsBadRequest()
-  // {
-  //   decimal basePrice = 500m;
-  //   string vehicleType = "invalid";
-
-  //   var totalVehiclePriceResult = _controller.GetTotalVehiclePrice(basePrice, vehicleType);
-  //   var badRequestResult = Assert.IsType<BadRequestObjectResult>(totalVehiclePriceResult.Result);
-  //   var messageValue = badRequestResult.Value as dynamic;
-
-  //   // Assert.IsType<BadRequestObjectResult>(badRequestResult);
-  //   // Assert.Null(totalVehiclePriceResult);
-  //   Assert.Equal("Invalid vehicle type", messageValue.Message);
-  // }
-
-  // [Fact]
-  // public void GetTotalPrice_InvalidBasePrice_ReturnsBadRequest()
-  // {
-  //   decimal basePrice = -1;
-  //   string vehicleType = "luxury";
-
-  //   var totalVehiclePriceResult = _controller.GetTotalVehiclePrice(basePrice, vehicleType);
-  //   var badRequestResult = Assert.IsType<BadRequestObjectResult>(totalVehiclePriceResult.Result);
-  //   var messageValue = badRequestResult.Value as dynamic;
-
-
-  //   Assert.Null(messageValue.Message);
-  //   Assert.Equal("Invalid vehicle base price", messageValue.Message);
-  // }
   [Fact]
   public void GetTotalPrice_InvalidBasePrice_ReturnsBadRequest()
   {

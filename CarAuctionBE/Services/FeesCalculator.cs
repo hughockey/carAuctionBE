@@ -2,7 +2,7 @@ using CarAuctionBE.DTOs;
 using CarAuctionBE.Models;
 
 namespace CarAuctionBE.Services;
-public class FeeCalculator : IFeeCalculator
+public class FeesCalculator : IFeesCalculator
 {
     public VehicleFeesCalculationResult CalculateFees(Vehicle vehicle)
     {
