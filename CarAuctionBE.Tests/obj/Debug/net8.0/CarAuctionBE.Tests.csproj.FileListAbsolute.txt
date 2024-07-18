@@ -110,3 +110,4 @@ C:\Users\H_L_c\Documents\projets\progi-test\carAuctionBEsln\CarAuctionBE.Tests\o
 C:\Users\H_L_c\Documents\projets\progi-test\carAuctionBEsln\CarAuctionBE.Tests\obj\Debug\net8.0\CarAuctionBE.Tests.pdb
 C:\Users\H_L_c\Documents\projets\progi-test\carAuctionBEsln\CarAuctionBE.Tests\obj\Debug\net8.0\CarAuctionBE.Tests.genruntimeconfig.cache
 C:\Users\H_L_c\Documents\projets\progi-test\carAuctionBEsln\CarAuctionBE.Tests\obj\Debug\net8.0\ref\CarAuctionBE.Tests.dll
+C:\Users\H_L_c\Documents\projets\progi-test\carAuctionBEsln\CarAuctionBE.Tests\obj\Debug\net8.0\CarAuctionBE.Tests.sourcelink.json

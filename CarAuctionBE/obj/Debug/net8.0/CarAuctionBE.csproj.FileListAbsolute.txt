@@ -65,3 +65,4 @@ C:\Users\H_L_c\Documents\projets\progi-test\carAuctionBEsln\CarAuctionBE\obj\Deb
 C:\Users\H_L_c\Documents\projets\progi-test\carAuctionBEsln\CarAuctionBE\obj\Debug\net8.0\CarAuctionBE.pdb
 C:\Users\H_L_c\Documents\projets\progi-test\carAuctionBEsln\CarAuctionBE\obj\Debug\net8.0\CarAuctionBE.genruntimeconfig.cache
 C:\Users\H_L_c\Documents\projets\progi-test\carAuctionBEsln\CarAuctionBE\obj\Debug\net8.0\ref\CarAuctionBE.dll
+C:\Users\H_L_c\Documents\projets\progi-test\carAuctionBEsln\CarAuctionBE\obj\Debug\net8.0\CarAuctionBE.sourcelink.json

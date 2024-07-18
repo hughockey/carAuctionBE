@@ -35,9 +35,9 @@ public class AuctionControllerTests
     decimal basePrice = -1;
     string vehicleType = "luxury";
 
-    var totalVehiclePriceresult = _controller.GetTotalVehiclePrice(basePrice, vehicleType);
+    var totalVehiclePriceResult = _controller.GetTotalVehiclePrice(basePrice, vehicleType);
 
-    var badRequestResult = Assert.IsType<BadRequestObjectResult>(totalVehiclePriceresult.Result);
+    var badRequestResult = Assert.IsType<BadRequestObjectResult>(totalVehiclePriceResult.Result);
     var messageValue = badRequestResult.Value as ErrorResponse;
     Assert.NotNull(messageValue);
     Assert.Equal("Invalid vehicle base price", messageValue.Message);
@@ -49,9 +49,9 @@ public class AuctionControllerTests
     decimal basePrice = 500;
     string vehicleType = "invalid";
 
-    var totalVehiclePriceresultresult = _controller.GetTotalVehiclePrice(basePrice, vehicleType);
+    var totalVehiclePriceResult = _controller.GetTotalVehiclePrice(basePrice, vehicleType);
 
-    var badRequestResult = Assert.IsType<BadRequestObjectResult>(totalVehiclePriceresult.Result);
+    var badRequestResult = Assert.IsType<BadRequestObjectResult>(totalVehiclePriceResult.Result);
     var messageValue = badRequestResult.Value as ErrorResponse;
     Assert.NotNull(messageValue);
     Assert.Equal("Invalid vehicle type", messageValue.Message);
