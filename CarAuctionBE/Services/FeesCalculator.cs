@@ -34,15 +34,15 @@ public class FeesCalculator : IFeesCalculator
             associationFee = 20;
 
         decimal totalVehiclePrice = vehicle.BasePrice + basicBuyerFee + sellerSpecialFee + associationFee + storageFee;
-  
-    return new VehicleFeesCalculationResult
-    {
-        BasePrice = vehicle.BasePrice,
-        BasicBuyerFee = basicBuyerFee,
-        SellerSpecialFee = sellerSpecialFee,
-        AssociationFee = associationFee,
-        StorageFee = storageFee,
-        TotalVehiclePrice = totalVehiclePrice
-    };
+
+        return new VehicleFeesCalculationResult
+        {
+            BasePrice = vehicle.BasePrice,
+            BasicBuyerFee = basicBuyerFee,
+            SellerSpecialFee = sellerSpecialFee,
+            AssociationFee = associationFee,
+            StorageFee = storageFee,
+            TotalVehiclePrice = totalVehiclePrice
+        };
     }
 }
